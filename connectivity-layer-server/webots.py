@@ -16,8 +16,8 @@ def scenario1():
         # Retrieve JSON data from the incoming request
         data = request.json
         order_id = data.get('orderId')
-        address = data.get('address')
-        box_colour = data.get('boxColour')
+        robot_id = data.get('robotId')
+        product_id = data.get('productId')
 
         # Open the state file for reading and writing
         with open('robot_1_controller/state.txt', 'r+') as state_file:
@@ -25,17 +25,17 @@ def scenario1():
             
             # Check if the state is "1"
             if state_content == "1":
-                # Example logic to write different values to a file based on box_colour
+                # Example logic to write different values to a file based on product_id
                 with open('color.txt', 'w') as color_file:
-                    if box_colour == 'purple':
+                    if product_id == 1:
                         color_file.write("15")
-                    elif box_colour == 'green':
+                    elif product_id == 0:
                         color_file.write("13")
-                    elif box_colour == 'blue':
+                    elif product_id == 2:
                         color_file.write("14")
                     else:
-                        # Return an error if the boxColour is invalid
-                        return jsonify({"error": "Invalid boxColour"}), 500
+                        # Return an error if the productId is invalid
+                        return jsonify({"error": "Invalid productId"}), 500
                 
                 # Update the state file to "2"
                 state_file.seek(0)
@@ -46,8 +46,8 @@ def scenario1():
                 with open('order.txt', 'w') as file:
                     file.write(order_id)
                 
-                with open('address.txt', 'w') as file:
-                    file.write(address)
+                with open('robot.txt', 'w') as file:
+                    file.write(f"{robot_id}")
 
                 # Return a success response
                 return jsonify({"state": "Success"}), 200
@@ -66,7 +66,7 @@ def scenario2():
         # Retrieve JSON data from the incoming request
         data = request.json
         order_id = data.get('orderId')
-        address = data.get('address')
+        robot_id = data.get('robotId')
         
         # Open the state file for robot 2
         with open('robot_2_controller/state.txt', 'r+') as state_file:
@@ -83,8 +83,8 @@ def scenario2():
                 with open('order.txt', 'w') as file:
                     file.write(order_id)
                 
-                with open('address.txt', 'w') as file:
-                    file.write(address)
+                with open('robot.txt', 'w') as file:
+                    file.write(f"{robot_id}")
 
                 # Return a success response
                 return jsonify({"state": "Success"}), 200
@@ -103,7 +103,7 @@ def scenario3():
         # Retrieve JSON data from the incoming request
         data = request.json
         order_id = data.get('orderId')
-        address = data.get('address')
+        robot_id = data.get('robotId')
 
         # Open the state file for robot 3
         with open('robot_3_controller/state.txt', 'r+') as state_file:
@@ -120,8 +120,8 @@ def scenario3():
                 with open('order.txt', 'w') as file:
                     file.write(order_id)
                 
-                with open('address.txt', 'w') as file:
-                    file.write(address)
+                with open('robot.txt', 'w') as file:
+                    file.write(f"{robot_id}")
 
                 # Return a success response
                 return jsonify({"state": "Success"}), 200
