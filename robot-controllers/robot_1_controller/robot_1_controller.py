@@ -46,12 +46,13 @@ for i in range(len(arm_motor_names)):
     motors[i].setVelocity(0.4)  # Set motor speeds for the arm joints
 
 # Function to call an external robot API
-def call_robot_api(order_id, robot_id, address):
-    url =  "YOUR-URL-HERE"# URL for the API
+def call_robot_api(order_id, process_id, product_id, robot_id):
+    url = "YOUR-URL-HERE"# URL for the API
     payload = {
         "orderId": order_id,
-        "robotId": robot_id,
-        "address": address
+        "processId": int(process_id),
+        "productId": int(product_id),
+        "robotId": int(robot_id)
     }
     try:
         # Send a POST request to the API
@@ -246,11 +247,18 @@ def task(color):
     order = "12345"
     with open('../order.txt', 'r') as file:
         order = file.read()
-    address = '0x'
-    with open('../address.txt', 'r') as file:
-        address = file.read()
+    robot_id = '0'
+    with open('../robot.txt', 'r') as file:
+        robot_id = file.read()
+        
+    product_id = 0
+    if color == 14:
+        product_id = 2
+    elif color == 15:
+        product_id = 1
+
     robot.step(10)
-    call_robot_api(order, "1", address)
+    call_robot_api(order, "1", product_id, robot_id)
     
     # Continue moving the robot after the task
     travel_right(0.3)
