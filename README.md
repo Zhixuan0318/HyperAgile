@@ -47,3 +47,18 @@ Here is a concept illustration:
 
 ![image](https://github.com/user-attachments/assets/0fcbc9d2-b656-4140-a32d-90f86bbc0545)
 
+## 💪 We launch HyperAgile (Our Solution)
+
+Hence, our team decided to launch HyperAgile as the first B2B Middleware-as-a-Service (MaaS) provider, assisting industries across various sectors with industrial warehouse robotic automation by designing and developing a custom hub. This hub acts like a bridge, which connects all components in their robotic automation setup architecture to the IOTA ecosystem. The benefit of using a custom middleware hub is that all of the important layers in the Web2-based robotic automation systems such as the factory floor (physical hardwares and robotics), IoT connectivity layer, security layer and also control and management layer, able to interact with the blockchain layer component easily (which involve on-chain tokenized assets, accounts, modules and packages, or any on-chain tooling integration). Our hub will now become the common interface for industries to connect all robotic components built by different language, framework, hardware, and communication protocol into a unified Web3 system on IOTA. Below is a high-level architecture overview of a custom hub in a industry robotic setup:
+
+### Introduce the concept of Hub - Architecture Overview
+
+![image](https://github.com/user-attachments/assets/dcfca8dc-426c-4839-978f-9766064de285)
+
+### Why custom, not a “one-size-fits-all” solution❓
+
+Our role is crucial because industrial robotic architectures are often complex and highly customized. Each industry has unique operational needs, diverse technologies, and specific regulatory requirements, making a one-size-fits-all approach impractical. That's why we offer tailored solutions, enabling industries to integrate IOTA Web3 infrastructure efficiently, which aligns perfectly with our product-market fit. This approach not only saves significant time for indsutries but also reduces costs.
+
+![image](https://github.com/user-attachments/assets/89058c9b-3f64-4b90-a3c2-c9ca862be220)
+
+As a B2B (business-to-business) service provider, we are proud to be the first to offer this service on IOTA. In one of our future milestone (have a look in our pitch deck), HyperAgile will also serve as a key driver in introducing a comprehensive ecosystem of industry-specific robotic development tools to the IOTA community as part of our ongoing service journey.
