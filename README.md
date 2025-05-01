@@ -6,9 +6,10 @@
 
 <br>
 
-![Group 1 (30)](https://github.com/user-attachments/assets/03d0dd2b-4702-4fca-a5d5-8e1ae3b462cc)
+![Frame 5 (9)](https://github.com/user-attachments/assets/c35e05e5-098a-4e98-b97e-3446552d95fc)
 
-# 👊 Problem We're Tackling
+
+## 👊 Problem We're Tackling
 
 ![image 5 (1)](https://github.com/user-attachments/assets/eafd5fc9-38c3-493a-8c32-934631d3f8d6)
 
@@ -29,3 +30,20 @@ Workflow efficiency suffers due to the complex data integration processes that s
 #### ❌ Security Concerns: 
 
 Security concerns are heightened in Web2 environments, where mutable data is vulnerable to tampering and counterfeiting, which is considered a damage to the supply chain and distribution trust. Additionally, the risk of a single point of failure can lead to significant disruptions, cascading through the entire robotic automation operation.
+
+## 💡 Inspirations: Really Motivated Us!
+
+To address the problems, letting current industries robotic setup to transition and utilise an IOTA-connected distributed data system is a smart move. The intuition behind is simple: Every action taken by a robot in a factory is recorded on the blockchain, making product movement, quality checks, and production steps fully transparent, traceable, verifiable, and tamper-resistant, significantly enhancing security and auditability for all supply chain stakeholders. Our team had included this in our demo video, don't miss it!
+
+## ⚔️ Existing Solutions and Challenges
+
+Existing solutions for implementing robotic automation in industries include a variety of software platforms (such as Gazebo and Webots), industry-specific solutions (like those from ABB, KUKA, and Fanuc), and integration tools (including ROS, AWS IoT, and Microsoft Azure IoT Hub). However, challenges emerge when considering the implementation of Web3 solutions in robotic automated operations. A significant hurdle is that the IOTA ecosystem lacks robotics-related development tools to facilitate the integration of blockchain solutions with existing legacy systems, which are often incompatible.
+
+>  A simple example: while developing a prototype for our demo, we found that no industry-grade robotic simulators offer tools for easily interacting with IOTA events to conduct simulations.
+
+☹️☹️☹️ Although industries can create their own tools or middleware for IOTA integrations, this approach can be costly, time-consuming, and resource-intensive. We need a solution to bridge the gap between industry robotic automation (web2 layer) and the IOTA ecosystem (web3 layer).
+
+Here is a concept illustration:
+
+![image](https://github.com/user-attachments/assets/0fcbc9d2-b656-4140-a32d-90f86bbc0545)
+
