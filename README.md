@@ -62,3 +62,13 @@ Our role is crucial because industrial robotic architectures are often complex a
 ![image](https://github.com/user-attachments/assets/89058c9b-3f64-4b90-a3c2-c9ca862be220)
 
 As a B2B (business-to-business) service provider, we are proud to be the first to offer this service on IOTA. In one of our future milestone (have a look in our pitch deck), HyperAgile will also serve as a key driver in introducing a comprehensive ecosystem of industry-specific robotic development tools to the IOTA community as part of our ongoing service journey.
+
+## How we helps our industry clients? (Not Limited To)
+
+- **🏭 Manufacturing:** On-chain logs of robotic interactions, verifiable compliance and audit trails for industrial goods.
+
+- **🚚 3PL (Third Party Logistics) and Ecommerce:** Real time on-chain updates of your parcel handled by order fulfilment robots in the warehouse.
+
+- **🧬 Pharmaceutical and Biotech:** Products handling with robots able to follow drug transparency regulations easily with verifiable trace.
+
+- **🍄 Cold Storage:** Verifiable robot handling of food and biotech products. Enhanced product lifecycle traceability.
