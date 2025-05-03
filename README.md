@@ -14,6 +14,10 @@
 2. Our Pitch Deck (PDF Download) [🌐Read It!](https://drive.google.com/file/d/1D_KlTTFkBzNIDKYSOFD9SoSHWukkY8qp/view?usp=sharing)
 3. Our Demo DApp (Deployed on IOTA Rebased Testnet) [🌐Try It!](https://hyperagile-on-iota.vercel.app/)
 
+### Extra: Code Submission Breakdown 📃
+For the convenience of the technical judges, our team has organized the code submission by breaking down the structure and providing descriptions for each folder and important files. You can access the documentation folder [🌐here](https://github.com/Zhixuan0318/HyperAgile/tree/main/doc#code-submission-breakdown) !
+
+<br>
 
 ## 👊 Problem We're Tackling
 
