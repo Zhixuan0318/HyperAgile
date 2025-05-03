@@ -79,7 +79,7 @@ As a B2B (business-to-business) service provider, we are proud to be the first t
 
 - **🍄 Cold Storage:** Verifiable robot handling of food and biotech products. Enhanced product lifecycle traceability.
 
-## Proof of Concept: An Implementation Prototype
+## ✨ Proof of Concept: An Implementation Prototype
 
 The implementation prototype we showcase in the demo video is built using the hub architecture concept that we proposed, which able to operate a robotic-powered small scale ecommerce-warehouse supply chain cycle. Further proving the feasibility of utilising IOTA solutions to solve real world industry problem in our project. Below attached is a high-level architecture diagram of our ecommerce-warehouse demo setup, which our custom hub being the most crucial middleware component:
 
@@ -87,9 +87,40 @@ The implementation prototype we showcase in the demo video is built using the hu
 
 An order is placed at the client layer, and the products are held in the warehouse as tokenized assets. Inventory items are tokenized on IOTA as on-chain digital assets using the `asset_tokenization` package, enabling fully on-chain tracking and management with a more transparent approach. Each tokenized inventory item is transferred to and stored in its respective kiosk, which is mapped to a real-life shelf or storage location in the warehouse.
 
+#### 👇 View the tokenized products on IOTA Scan 👇
+- Green Cube: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x79f23aaa9c8dfa523cff5c02583b271097367ccaeee9e1ef1e3654471ddbc99f)
+- Purple Cube: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x5c5dcbcd3f7277adf24249764ee3218a8d0902e83aeef5b0b71836f09561b557)
+- Blue Cube: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x8235d15fe27e857fb5e5f4d4ef34c270f07d7ccf4a555a2688b590ad2f63c919)
+
+#### 👇 View the shelf kiosk of each product on IOTA Scan 👇
+- Green Cube Kiosk: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xb2d0f4011e94c50d728034a9a4ca0897bc1612b6854dbe4deb1a62613c584851)
+- Purple Cube Kiosk: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x6ce573dd560698cb9a9dcae3bccc705985b050aa0a2cc43f34092f10c1f363bb)
+- Blue Cube Kiosk: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xf386ffbbaf7e4d421080bee666b5a154917da47073fb7cd3ff09f0525988e292)
+
 ![image](https://github.com/user-attachments/assets/109da3b2-b8a1-41ea-b1d2-5c15c3d50dc4)
 
 The order is processed and coordinated by on-chain modules and fulfilled by tokenized robots assigned to different tasks. These robots are digital twin representations of real robots in the factory and are also tokenized using the `asset_tokenization` package on IOTA. Representing industrial robots as digital twins on IOTA provides a transparent and efficient way to manage them on-chain. Each tokenized robot digital twin is mapped to a uniquely created kiosk to handle the on-chain asset flow during the order fulfillment process.
+
+#### 👇 View the kiosk of each picking robot on IOTA Scan 👇
+- #0: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xcf7b07c4590dfd4a82bcabbe2d3df42164a425088464042c3d075495a3ee17e9)
+- #1: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x2b4e39ea37d1bda9959d1ec7531dc1b365eb4758f8239e7d49966a23dabcad85)
+- #2: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x01b93229ebf993a30e6523abd3bfdd0a7b2659fd498d499d60af63c4038ef007)
+- #3: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x3ad6033596c69d61b71efda1e6334fbda0f8dc8bbdf96a56cde247bad0c4068c)
+- #4: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xc3fdb5d1433831260f822da16544d04fe70b571a201b427462675343f65ca347)
+
+#### 👇 View the kiosk of each packing robot on IOTA Scan 👇
+- #0: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x466236ae54754d021b8a37174832819152aabd62abeb6b29b921c8169e67bb49)
+- #1: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xe6267c8a43e006e1085a1a9de5e42e64d955e7080ab96695bd59493d7560ec04)
+- #2: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x439296496c8d984208df586fcd55265763d1fac5502ae305ed4b02d4bd58e2d5)
+- #3: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x4a4f3f5f3f88e2201c54033c412b306e7816c8208d74a0bc2fe142b219cf01ad)
+- #4: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x5aff598de439ae07dd4a6805794a380cbb5fd4a894a0dc20e77b29d353969bab)
+
+#### 👇 View the kiosk of each delivery robot on IOTA Scan 👇
+- #0: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xead164d39b1985233c88197a242c5f0861fc2af12aeb87dffe5a884094129aa2)
+- #1: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x6d0c0b52af4de4010e2d7a8b24dc6bbebbb241d84d60bbfd54427546cd3f63fb)
+- #2: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xcc5955119c4e1b892dfa2a03c063917129ea7d86f0ed79129f202d4a86c11285)
+- #3: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xde7ff6da5d868a7b955ee70f72f2948fea6815227d715cd017c6997296bfaa36)
+- #4: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xc8858e914b84c2cad48be85bfeda16237c221adddc04276da41d9b1c298ade6c)
 
 ![image](https://github.com/user-attachments/assets/11172d48-9035-4ac5-8617-791cc63ad347)
 
@@ -105,7 +136,7 @@ Finally, when the order is fulfilled, an operation report will be generated and 
 
 ![image](https://github.com/user-attachments/assets/645c2341-f020-49bf-8a45-91f4c45a36fe)
 
-## Composable kiosk-based design approach for warehouse robotic automation
+## 🧩 Composable kiosk-based design approach for warehouse robotic automation
 
 We use kiosks for our inventory and robots, with each digital twin mapped to a unique kiosk. This is our composable, kiosk-based design approach for warehouse automation. Every inventory shelf is treated as a kiosk, and inventory tokens are transferred in. Each zone within the warehouse is also represented as a kiosk, and each robot operating on the floor is assigned a kiosk. During a single operation cycle, an inventory token flows deterministically from one kiosk to another. This architecture provides us with better control and makes the system modular.
 
@@ -114,6 +145,11 @@ We use kiosks for our inventory and robots, with each digital twin mapped to a u
 Below is an example of a kiosk-to-kiosk asset movement, involving the product move out from the shelf to a chosen picking robot:
 
 ![image](https://github.com/user-attachments/assets/75568787-4227-4cb2-ba02-8b2132dd851d)
+
+#### 👇 View the kiosk of each zones on IOTA Scan 👇
+- Order Buffer Zone Kiosk: [🌐IOTA Scan](https://iotascan.com/testnet/object/0x37b35fe7d7c172ae7d1536c51412c6c344611f8ca320bc68c3fd6a14bde32a04)
+- Packout Zone Kiosk: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xf17c95caec2ce02a4d4d84fc50d0e74008b85dfa396ec64a1fd0e67518f4ae37)
+- Delivery Zone Kiosk: [🌐IOTA Scan](https://iotascan.com/testnet/object/0xfe53fae7099899a4e724b9c4c6cf34193443774968dbd0383710517bdf96967f)
 
 
 ## 🔌Connecting local robotic fleet
