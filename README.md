@@ -72,3 +72,52 @@ As a B2B (business-to-business) service provider, we are proud to be the first t
 - **🧬 Pharmaceutical and Biotech:** Products handling with robots able to follow drug transparency regulations easily with verifiable trace.
 
 - **🍄 Cold Storage:** Verifiable robot handling of food and biotech products. Enhanced product lifecycle traceability.
+
+## Proof of Concept: An Implementation Prototype
+
+The implementation prototype we showcase in the demo video is built using the hub architecture concept that we proposed, which able to operate a robotic-powered small scale ecommerce-warehouse supply chain cycle. Further proving the feasibility of utilising IOTA solutions to solve real world industry problem in our project. Below attached is a high-level architecture diagram of our ecommerce-warehouse demo setup, which our custom hub being the most crucial middleware component:
+
+![image](https://github.com/user-attachments/assets/bf5edd3d-81cc-4c7d-8ee5-82b862b1484b)
+
+An order is placed at the client layer, and the products are held in the warehouse as tokenized assets. Inventory items are tokenized on IOTA as on-chain digital assets using the `asset_tokenization` package, enabling fully on-chain tracking and management with a more transparent approach. Each tokenized inventory item is transferred to and stored in its respective kiosk, which is mapped to a real-life shelf or storage location in the warehouse.
+
+![image](https://github.com/user-attachments/assets/109da3b2-b8a1-41ea-b1d2-5c15c3d50dc4)
+
+The order is processed and coordinated by on-chain modules and fulfilled by tokenized robots assigned to different tasks. These robots are digital twin representations of real robots in the factory and are also tokenized using the `asset_tokenization` package on IOTA. Representing industrial robots as digital twins on IOTA provides a transparent and efficient way to manage them on-chain. Each tokenized robot digital twin is mapped to a uniquely created kiosk to handle the on-chain asset flow during the order fulfillment process.
+
+![image](https://github.com/user-attachments/assets/11172d48-9035-4ac5-8617-791cc63ad347)
+
+We designed a factory simulation to visualize this. The cool part is, native IOTA randomness is used to select one available robot from the fleet for each operation; this process is known as load balancing. 
+
+![image](https://github.com/user-attachments/assets/638a3230-a7fc-4e68-a2d5-e641e2859a15)
+
+For a human-robot collaborative environment (for example, a Good to Person scenario in warehouse), which requires human operators’ close supervision, this can be facilitated using a multi-signature mechanism on IOTA, creating an efficient feedback loop that reflects on the tokenized robot.
+
+![image](https://github.com/user-attachments/assets/e47f816d-c4fe-44c5-bdc7-697daf63249a)
+
+Finally, when the order is fulfilled, an operation report will be generated and stored on Pinata. Fully tamper-proof and verifiable.
+
+![image](https://github.com/user-attachments/assets/645c2341-f020-49bf-8a45-91f4c45a36fe)
+
+## Composable kiosk-based design approach for warehouse robotic automation
+
+We use kiosks for our inventory and robots, with each digital twin mapped to a unique kiosk. This is our composable, kiosk-based design approach for warehouse automation. Every inventory shelf is treated as a kiosk, and inventory tokens are transferred in. Each zone within the warehouse is also represented as a kiosk, and each robot operating on the floor is assigned a kiosk. During a single operation cycle, an inventory token flows deterministically from one kiosk to another. This architecture provides us with better control and makes the system modular.
+
+![image](https://github.com/user-attachments/assets/edfcd048-9b0b-4172-bbb9-ffbe21c84825)
+
+Below is an example of a kiosk-to-kiosk asset movement, involving the product move out from the shelf to a chosen picking robot:
+
+![image](https://github.com/user-attachments/assets/75568787-4227-4cb2-ba02-8b2132dd851d)
+
+
+## 🔌Connecting local robotic fleet
+
+![image](https://github.com/user-attachments/assets/dec9eed9-c3eb-4f85-b686-24f968489cc3)
+
+To further validate the feasibility of our implementation, we also perform testing on a physical robot, which we refer to as a local robotic fleet. The system is centered around the Hub as well, enabling industries to interact with an IoT connectivity layer (refer to above architecture overview). This layer acts as an intermediary between the robotic fleet and the Hub, which is integrated with IOTA. The IoT connectivity layer can incorporate various technologies such as AWS IoT Core, Microsoft Azure IoT, Oracle IoT cloud, and MQTT-based solutions like RabbitMQ or Kafka, etc. 
+
+To simplify the demonstration, our team utilized ngrok to establish a secure communication tunnel between our physical robot—a combination of a ROS-powered CoBot and a mobile AGV (Automated Guided Vehicle), with operations built using the Elephant Robotics Python API—and initiated the order fulfillment process on our DApp. As shown in the demo video, the commands assigned from IOTA are successfully captured and transmitted to the connectivity layer, where they are received and executed by the robot in real time. Once the task is completed, the operation is logged and sent back via the same route. This process mirrors what can be tested directly on our demo DApp.
+
+We also replicated this functionality using our Webots simulation (hosted locally in Webots software) to control the robotic fleet. By creating an intermediate connectivity layer (via a Flask server) and utilizing the ngrok tunnel, we successfully recreated the same results as with the physical robot. You can see the full demonstration in the video!
+
+
