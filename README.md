@@ -8,6 +8,12 @@
 
 ![Frame 5 (9)](https://github.com/user-attachments/assets/c35e05e5-098a-4e98-b97e-3446552d95fc)
 
+## 📦 Our Deliverables
+
+1. Our 5 mins+ Demo Video (Youtube) [🌐Watch It!](https://youtu.be/KwEaIVQ5rNM)
+2. Our Pitch Deck (PDF Download) [🌐Read It!](https://drive.google.com/file/d/1D_KlTTFkBzNIDKYSOFD9SoSHWukkY8qp/view?usp=sharing)
+3. Our Demo DApp (Deployed on IOTA Rebased Testnet) [🌐Try It!](https://hyperagile-on-iota.vercel.app/)
+
 
 ## 👊 Problem We're Tackling
 
